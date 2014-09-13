@@ -1,0 +1,75 @@
+$white-transp: rgba(255,255,255,0.4);
+
+.test{
+  margin-top:100px;
+  border-left:1px solid $white-transp;
+  border-right:1px solid $white-transp;
+  width:60%;
+   margin:0 auto;
+ div{
+   margin-left:25px;
+    margin-right:25px;
+   margin-top:50px;
+   text-align:justify;
+   
+   p{
+     font-family:Arial;
+     font-weight:400;
+   }
+ }
+  h2,h1 { 
+    
+    width:100%;
+    text-align:center;
+    border-bottom: 1px solid $white-transp; 
+    line-height:0em; 
+    margin:10px 0 20px; 
+    
+    & > span {
+      background-color:rgba(34, 34, 34, 0.5) !important;
+      background: image-url('bg.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding:0 15px; 
+      
+    
+    }
+  } 
+  h1 {
+    font-weight:300;
+    font-size:50px;
+    padding:0 30px;
+  }
+  
+  .logo_down{
+    margin-top:85px;
+    span > span{
+       background: image-url('logo_susenka_x2.png') no-repeat center center;
+       background-size: 80px;
+       padding: 26px 46px;
+     }
+    
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+.test{
+  div{
+    margin:50px 0 0 0 ;
+  }
+  
+  
+  h1 {
+
+    font-size:25px;
+    padding:0 30px;
+  }
+  
+  margin-top:100px;
+  border:0;
+  width:100%;
+  margin:0 auto;
+ }
+}
