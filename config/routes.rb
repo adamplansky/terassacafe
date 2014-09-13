@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  get 'pages/home' => 'pages#home'
+ 
+  
+  root to: 'pages#home'
 end
