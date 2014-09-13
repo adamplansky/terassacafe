@@ -1,0 +1,48 @@
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+
+$circle: 550px;
+
+//.circle{
+//  width:$circle;
+//  height:$circle;
+//  border-radius:$circle/2;
+//  font-size:20px;
+//  color:#fff;
+//  line-height:100px;
+//  text-align:center;
+//  background:#000;
+//  margin:0 auto;
+//  img{
+//    top: 30%;
+//    padding-left: 22px;
+//    position: absolute;
+//    height: 65px;
+//  }
+//}
+
+
+.circle {
+  font-family:'bebas_neueregular';
+    display: block;
+    width: $circle;
+    height: $circle;
+    background-color:rgba(166, 154, 154, 0.4);
+    -moz-border-radius: $circle/2;
+    -webkit-border-radius: $circle/2;
+    background-image: image-url('logo_x2.png');
+    background-position:50% 44%;
+    background-repeat:no-repeat;    
+    background-size: $circle*0.8;
+    padding-top:320px;
+    color:#fff;
+    font-size:30px;
+    margin:0 auto;
+    margin-top:100px;
+    letter-spacing: 1px;
+    
+}
