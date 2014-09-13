@@ -1,0 +1,101 @@
+<div class="container">
+
+  <div class="starter-template">
+    
+    <div class="row">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo23.jpg" class="thumbnail group1" title="TÉRA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo23.jpg" alt="TÉRA">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo22.jpg" class="thumbnail group1" title="TEREZA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo22.jpg" alt="TEREZA">
+          </a>
+        </div>
+      
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo21.jpg" class="thumbnail group1" title="TEREZA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo21.jpg" alt="TEREZA">
+          </a>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo4.jpg" class="thumbnail group1" title="TÉRA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo4.jpg" alt="TÉRA">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo5.jpg" class="thumbnail group1" title="TEREZA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo5.jpg" alt="TEREZA">
+          </a>
+        </div>
+      
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo6.jpg" class="thumbnail group1" title="TEREZA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo6.jpg" alt="TEREZA">
+          </a>
+        </div>
+        
+      </div> 
+      
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo1.jpg" class="thumbnail group1" title="TÉRA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo1.jpg" alt="TÉRA">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo2.jpg" class="thumbnail group1" title="TEREZA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo2.jpg" alt="TEREZA">
+          </a>
+        </div>
+      
+        <div class="col-sm-6 col-md-4">
+          <a href="http://www.luciekepplova.cz/photos/photo3.jpg" class="thumbnail group1" title="TEREZA" >
+            <img src="http://www.luciekepplova.cz/photos/nahled/photo3.jpg" alt="TEREZA">
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  //Examples of how to assign the Colorbox event to elements
+  $(".group1").colorbox({rel:'group1'});
+  $(".group2").colorbox({rel:'group2', transition:"fade"});
+  $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+  $(".group4").colorbox({rel:'group4', slideshow:true});
+  $(".ajax").colorbox();
+  $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+  $(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+  $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+  $(".inline").colorbox({inline:true, width:"50%"});
+  $(".callbacks").colorbox({
+    onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+    onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+    onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+    onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+    onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+  });
+
+  $('.non-retina').colorbox({rel:'group5', transition:'none'})
+  $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+  //Example of preserving a JavaScript event for inline calls.
+  $("#click").click(function(){ 
+    $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+    return false;
+  });
+});
+</script>

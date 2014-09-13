@@ -4,3 +4,31 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+
+// transform-scale($scale);
+// transition-duration($timing);
+// transition-timing-function($function);
+@mixin transform-scale($scale){
+  -ms-transform: scale($scale); /* IE 9 */
+  -webkit-transform: scale($scale); /* Chrome, Safari, Opera */
+  transform: scale($scale);
+}
+@mixin transition-duration($timing){
+		-webkit-transition-duration: $timing;
+    -moz-transition-duration: $timing;
+    	transition-duration: $timing;			      
+}
+@mixin transition-timing-function($function){
+  transition-timing-function: $function;
+  -moz-transition-timing-function: $function;
+  -webkit-transition-timing-function:$function;
+}
+@mixin opacity($value){
+  $IEValue: $value*100;
+  -moz-opacity: $value;
+  -khtml-opacity: $value;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
