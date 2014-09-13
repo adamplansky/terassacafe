@@ -1,3 +1,5 @@
+@import "krutysoubor";
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -26,14 +28,17 @@ $circle: 550px;
 //}
 
 
+
 .circle {
   font-family:'bebas_neueregular';
     display: block;
     width: $circle;
     height: $circle;
     background-color:rgba(166, 154, 154, 0.4);
-    -moz-border-radius: $circle/2;
-    -webkit-border-radius: $circle/2;
+    
+    @include border-radius($circle/2);
+    
+    
     background-image: image-url('logo_x2.png');
     background-position:50% 44%;
     background-repeat:no-repeat;    
