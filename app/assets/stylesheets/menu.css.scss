@@ -1,13 +1,29 @@
+
+
 .menu{
   section{
     .menu_in{
       text-align:center;
-        }
+    }
     img{
       display:inline;
       margin:0 20px;
     }
   }
+
   
-  
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu{
+    section{
+      .menu_in{
+        text-align:center;
+      }
+      img{
+        display:inline;
+        margin:0 5px;
+      }
+    }
+  }
 }

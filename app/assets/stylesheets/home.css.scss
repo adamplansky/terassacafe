@@ -5,10 +5,10 @@
 $circle: 500px;
 
 
-.detail{
-  
-  width: $circle;
-  height: $circle;
+.details{
+  margin-top:100px ;
+  //  width: $circle;
+  //  height: $circle;
   
 }
 
@@ -20,7 +20,7 @@ $circle: 500px;
   
   position: relative;
   margin:0 auto;
-  margin-top:80px;
+  margin-top:0px;
   width: $circle;
   height: $circle;
   &:hover{
@@ -41,58 +41,93 @@ $circle: 500px;
   }
 }
 .circle,.circle2 {
-    font-family:'bebas_neueregular';
-    display: block;
-    width: $circle;
-    height: $circle;
-  }
-  .circle{
+  font-family:'bebas_neueregular';
+  display: block;
+  width: $circle;
+  height: $circle;
+}
+.circle{
     
-    @include border-radius($circle/2);
+  @include border-radius($circle/2);
     
-    //position: absolute;
-    background-color:rgba(255,255,255, 0.1);
-    background-image: image-url('logo_x2.png');
-    background-position:50% 44%;
-    background-repeat:no-repeat;    
-    background-size: $circle*0.8;
-    padding-top:280px;
-    color:#fff;
-    h1{font-size:24px;
+  //position: absolute;
+  background-color:rgba(255,255,255, 0.1);
+  background-image: image-url('logo_x2.png');
+  background-position:50% 44%;
+  background-repeat:no-repeat;    
+  background-size: $circle*0.8;
+  padding-top:280px;
+  color:#fff;
+  h1{
+    font-size:24px;
     font-weight:normal;
-    }
-    letter-spacing: 1px;
-
-
-    
   }
-  .circle2{
-    opacity: 0;
-    position:absolute;
-    width: 100%;
-    margin-top: -355px;
-    .button{
+  letter-spacing: 1px;
+
+
     
-      &:hover{
-        text-decoration:none;
-        border-bottom:1px solid #fff;
-        padding:0 5px;
-      }
-      color:#fff;
-      font-size:20px;
+}
+.circle2{
+  opacity: 0;
+  position:absolute;
+  width: 100%;
+  margin-top: -355px;
+  .button{
+    
+    &:hover{
+      text-decoration:none;
+      border-bottom:1px solid #fff;
+      padding:0 5px;
+    }
+    color:#fff;
+    font-size:20px;
 
      
-    }
-    .heading{
-      font-size:55px;
-      border-bottom:1px solid #fff;
-      padding:0 10px;
-    }
-    p{
-      font-size:15px;
-      margin-top:20px;
-      font-family:Arial;
-      padding:0 30px;
-    }
-
   }
+  .heading{
+    font-size:55px;
+    border-bottom:1px solid #fff;
+    padding:0 10px;
+  }
+  p{
+    font-size:15px;
+    margin-top:20px;
+    font-family:Arial;
+    padding:0 30px;
+  }
+
+}
+  
+$circle: 550px;
+@media (min-width: 320px) and (max-width: 767px) {
+  .details {
+   margin-top: 0px; 
+ }
+  
+  .outerCircle {
+    @include border-radius($circle/4);
+    width: $circle/2;
+    height: $circle/2;
+  }
+  .circle,.circle2 {
+    width: $circle/2;
+    height: $circle/2;
+  }
+  .circle{ 
+    background-color:rgba(255,255,255, 0.1);
+        @include opacity(0.25);
+        @include border-radius($circle/4);
+         background-size: $circle/2*0.8;
+    h1{
+      @include opacity(0);
+    }
+  }
+  .circle2{
+    @include opacity(1);
+    .heading{
+          @include opacity(0);
+        }
+  }
+}
+  
+  

@@ -60,9 +60,26 @@ section {
     color:#fff;
   }
 
-
+  html, body {
+         height: 100%;
+   }
+   .test{//, .container > .starter-template > .row{
+     margin-top:100px;
+   }
+   body > main{
+     min-height: 85%;
+     height: auto !important;
+     height: 100%;
+     margin: 0px 0px -41px 0px;
+   }
+   footer{
+     height:41px;
+   }
+   
+   
+   
   .starter-template {
-    padding: 40px 15px;
+    padding: 0px 15px;
     text-align: center;
     color:#fff;
   }

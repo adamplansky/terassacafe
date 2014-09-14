@@ -10,6 +10,12 @@ class BlogController < ApplicationController
     :oauth_token        => Rails.application.secrets.tumblr_oauth_token,
     :oauth_token_secret => Rails.application.secrets.tumblr_oauth_token_secret
     )
+    puts "------"
+    puts "------"
+    puts @myClient.info
+    puts "------"
+    puts "------"
+    
     
     page = params[:page].to_i
     if page == 0 
@@ -18,7 +24,7 @@ class BlogController < ApplicationController
     
     @allposts = Array.new
     
-    @posts = @myClient.posts("jedemedobaru.tumblr.com", limit: PAGE_SIZE, offset: PAGE_SIZE * (page-1) )
+    @posts = @myClient.posts("terassacafe.tumblr.com", limit: PAGE_SIZE, offset: PAGE_SIZE * (page-1) )
     
     @posts["posts"].each_index do |i|
       @allposts[(page-1)*PAGE_SIZE+i] = @posts["posts"][i]
