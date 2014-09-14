@@ -13,7 +13,6 @@ $circle: 500px;
 }
 
 .outerCircle {
-  border:1px solid rgba(0,0,0,0.3);
   @include transition-duration(300ms);
   @include transition-timing-function(ease-in);
 

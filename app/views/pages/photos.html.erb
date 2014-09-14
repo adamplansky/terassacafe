@@ -3,68 +3,94 @@
   <div class="starter-template">
     
     <div class="row">
+      
+   
+      
       <div class="row">
         <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo23.jpg" class="thumbnail group1" title="TÉRA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo23.jpg" alt="TÉRA">
-          </a>
+          <%= link_to image_tag("photos/s1.jpg"), image_path("photos/1.jpg"), class:"thumbnail group1" %>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo22.jpg" class="thumbnail group1" title="TEREZA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo22.jpg" alt="TEREZA">
-          </a>
+          <%= link_to image_tag("photos/s2.jpg"), image_path("photos/2.jpg"), class:"thumbnail group1"  %>
         </div>
-      
+
         <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo21.jpg" class="thumbnail group1" title="TEREZA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo21.jpg" alt="TEREZA">
-          </a>
+            <%= link_to image_tag("photos/s3.jpg"), image_path("photos/3.jpg"), class:"thumbnail group1"  %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <%= link_to image_tag("photos/s4.jpg"), image_path("photos/4.jpg"), class:"thumbnail group1" %>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <%= link_to image_tag("photos/s5.jpg"), image_path("photos/5.jpg"), class:"thumbnail group1"  %>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <%= link_to image_tag("photos/s6.jpg"), image_path("photos/6.jpg"), class:"thumbnail group1"  %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <%= link_to image_tag("photos/s7.jpg"), image_path("photos/7.jpg"), class:"thumbnail group1" %>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <%= link_to image_tag("photos/s8.jpg"), image_path("photos/8.jpg"), class:"thumbnail group1"  %>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <%= link_to image_tag("photos/s9.jpg"), image_path("photos/9.jpg"), class:"thumbnail group1"  %>
         </div>
       </div>
       
       <div class="row">
         <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo4.jpg" class="thumbnail group1" title="TÉRA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo4.jpg" alt="TÉRA">
-          </a>
+          <%= link_to image_tag("photos/s10.jpg"), image_path("photos/10.jpg"), class:"thumbnail group1" %>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo5.jpg" class="thumbnail group1" title="TEREZA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo5.jpg" alt="TEREZA">
-          </a>
-        </div>
-      
-        <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo6.jpg" class="thumbnail group1" title="TEREZA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo6.jpg" alt="TEREZA">
-          </a>
-        </div>
-        
-      </div> 
-      
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo1.jpg" class="thumbnail group1" title="TÉRA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo1.jpg" alt="TÉRA">
-          </a>
+          <%= link_to image_tag("photos/s11.jpg"), image_path("photos/11.jpg"), class:"thumbnail group1"  %>
         </div>
 
         <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo2.jpg" class="thumbnail group1" title="TEREZA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo2.jpg" alt="TEREZA">
-          </a>
+            <%= link_to image_tag("photos/s12.jpg"), image_path("photos/12.jpg"), class:"thumbnail group1"  %>
         </div>
-      
-        <div class="col-sm-6 col-md-4">
-          <a href="http://www.luciekepplova.cz/photos/photo3.jpg" class="thumbnail group1" title="TEREZA" >
-            <img src="http://www.luciekepplova.cz/photos/nahled/photo3.jpg" alt="TEREZA">
-          </a>
-        </div>
-        
       </div>
+        
+      <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <%= link_to image_tag("photos/s13.jpg"), image_path("photos/13.jpg"), class:"thumbnail group1" %>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <%= link_to image_tag("photos/s14.jpg"), image_path("photos/14.jpg"), class:"thumbnail group1"  %>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+              <%= link_to image_tag("photos/s15.jpg"), image_path("photos/15.jpg"), class:"thumbnail group1"  %>
+          </div>
+        </div>
+        
+     
+        
+        
+        
+      
     </div>
   </div>
 
 </div>
+
+<script type="text/javascript" >
+
+
+
+ $(document).ready(function(){
+   $(".group1").colorbox({rel:'group1',maxWidth:'95%',		maxHeight:'95%'});
+ });
+</script>

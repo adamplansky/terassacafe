@@ -32,3 +32,12 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
   filter: alpha(opacity=$IEValue);
 }
+.ta-r{
+  text-align:right;
+}
+.ta-l{
+  text-align:left;
+}
+.ta-c{
+  text-align:center;
+}

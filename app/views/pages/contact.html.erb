@@ -1,0 +1,57 @@
+<% content_for :title do %>Kontakt<% end %>
+
+<div class="container">
+
+  <div class="starter-template">
+   
+    <div class="test contact" >
+      <h1>
+        <span>Kontakt</span>
+      </h1>
+      
+      <section>
+        <section class="pull-left col-xs-6 col-sm-6">
+          <h3>TERASSA CAFE BISTRO</h3>
+          <p>Palackého náměstí 1092<br>278 01 Kralupy nad Vltavou</p>
+          
+          <p>Terrassa cafe bistro se nachází v budove OD Perla vpravo od vstupu do prodejny Global.</p>
+           <h3>OTEVÍRACÍ DOBA</h3>
+           <p>PO - SO: 9:00 - 22:00<br>NE: 11:00 - 22:00</p>
+           
+            <h3>REZERVACE</h3>
+            <p>T: 733 788 843</p>
+            <p>(volejte či pište, obratem odpovíme)</p>
+            <p>E: info@terassacafe.cz</p>
+        </section>
+        <section class="pull-right col-xs-6 col-sm-6">
+          <%= link_to image_tag("terassa_mapa.png"), image_path("terassa_mapa.png"), class: "thumbnail group2" %>
+          
+          <p class="ta-r">Zobrazit na <%= link_to "mapy.cz", "http://bit.ly/XgqS1w" %>
+            
+          <h3>FACEBOOK</h3>
+
+          <p><%= link_to image_tag("icon_fb_bila@2x.png", width:'42', class:"pull-left fb-icon", style:"margin-right:5px"), "https://www.facebook.com/terassacafebistro"  %>Sledujte aktuální dění a neodolatelné denní nabídky na <%= link_to "Facebooku", "https://www.facebook.com/terassacafebistro"%> !</p>
+        </section>
+      </section>
+
+      
+      
+      
+      <h2 class="logo_down"><span><span></span></span></h2>
+      
+	   
+    
+    
+    
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" >
+
+
+
+ $(document).ready(function(){
+   $(".group2").colorbox({rel:'group2',maxWidth:'95%',		maxHeight:'95%'});
+ });
+</script>
