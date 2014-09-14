@@ -11,7 +11,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'high_voltage'
-
+gem 'simple_form'
+gem "activerecord-tableless", "~> 1.0"
+gem 'tumblr_client'
+gem 'kaminari'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
