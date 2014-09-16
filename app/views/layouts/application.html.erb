@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Terassacafe" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Terassa cafe" %>">
+    <meta name="description" content="Popis tvorby a publikování WWW stránek pro začátečníky i profesionály.">.
+    <meta name="keywords" content="bistro, česká kuchyně, káva, víno, cukrárna, pekárna, domácí zákusky, polední nabídka, vinotéka, kavárna, espresso, restaurace v Kralupech, kavárna v Kralupech, restaurace, čerstvá jídla, oběd v Kralupech, polední menu, snídaně, snídaně v Kralupech, příjemné posezení Kralupy nad Vltavou, restaurace Kralupy nad Vltavou">
+    <meta name="author" content="Adam Plánský">
+    <meta name="robots" content="all">
+    <!-- <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Terassa cafe" %>"> -->
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag "jquery_colorbox" %>
     <%= favicon_link_tag '/favicon.ico' %>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tags %>
   </head>
   <body>
