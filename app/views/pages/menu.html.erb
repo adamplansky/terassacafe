@@ -1,4 +1,4 @@
-<% content_for :title do %>Kontakt<% end %>
+<% content_for :title do %>Menu<% end %>
 
 <div class="container">
 
@@ -14,6 +14,7 @@
           <p>Prohlédněte si naší stálou nabídku na nápojovém a jídelním lístku.</p>
           <section>
           <section class="menu_in">
+            <%= link_to (image_tag "icon_snidane@2x.png", width:"50"),"/snidane.pdf" %>
             <%= link_to (image_tag "icon_napojovy_listek@2x.png", width:"50"), "/napojovy_listek.pdf" %>
             <%= link_to (image_tag "icon_jidelni_listek@2x.png", width:"50"),"/jidelni_listek.pdf" %>
           </section>
