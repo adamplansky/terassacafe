@@ -18,7 +18,7 @@ $white-transp: rgba(255,255,255,0.4);
      font-family:Arial;
      font-weight:400;
      line-height:27px;
-     margin-top:25px;
+     margin-top:15px;
    }
  }
   h2,h1 { 
@@ -31,7 +31,7 @@ $white-transp: rgba(255,255,255,0.4);
     
     & > span {
       background-color:rgba(34, 34, 34, 0.5) !important;
-      background: image-url('bg.jpg') no-repeat center center fixed; 
+      background: url(image-path('bg.jpg')) no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -56,6 +56,12 @@ $white-transp: rgba(255,255,255,0.4);
      }
     
   }
+}
+.test .h2{
+  border:0;
+  margin:60px 0;
+  width:auto;
+  display:block;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

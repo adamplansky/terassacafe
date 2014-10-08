@@ -15,6 +15,8 @@ gem 'simple_form'
 gem "activerecord-tableless", "~> 1.0"
 gem 'tumblr_client'
 gem 'kaminari'
+gem 'remove_turbolinks'
+gem 'therubyracer'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -25,6 +27,5 @@ group :development do
 end
 group :production do
   gem 'thin'
-  gem 'pg'
   gem 'rails_12factor'
 end
